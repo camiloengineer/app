@@ -1,0 +1,19 @@
+<div class="content">
+    <div class="row d-flex mt-5 justify-content-center">
+        <div class="col-6 pt-5">
+            <form [formGroup]="loginForm" (submit)="onSubmit()">
+                <div class="form-group">
+                    <label for="exampleImputEmail">Username</label>
+                    <input type="text" class="form-control" formControlName="username">
+                    <small id="emailHelp" class="form-text text-muted">El usuario fue encontrado</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" formControlName="password" id="exampleInputPassword1">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Ingresar</button>
+            </form>
+        </div>
+    </div>
+</div>
